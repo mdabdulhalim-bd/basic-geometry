@@ -60,6 +60,8 @@
             <div class="flex items-center font-bold mt-2">
               <div class="text-xl flex items-center">
                 <input
+                id="triangle-base"
+                  name=""
                   type="text"
                   class="bg-yellow-100 py-2 px-2 outline-none placeholder:text-gray-600 w-6/12"
                   placeholder="b"
@@ -67,15 +69,18 @@
               </div>
               <div class="text-xl flex items-center">
                 <input
+                id="triangle-height"
                   type="text"
                   class="bg-yellow-100 py-2 px-2 outline-none placeholder:text-gray-600 w-6/12"
                   placeholder="h"
                 /><span>cm</span>
               </div>
             </div>
-            <h3 class="text-xl py-2">Area :  <span>cm <sup>2</sup></span></h3>
+            <h3 class="text-xl py-2">Area : <span id="triangle-area"> 00 </span>  <span>cm <sup>2</sup></span></h3>
             <div class="card-actions">
               <button
+                onclick="calculateTriangleArea()"
+                id="triangle-btn"
                 class="btn hover:text-black bg-[#1090D8] text-white text-[18px] w-full"
               >
                 Calculate
@@ -196,6 +201,7 @@
             <div class="flex items-center font-bold mt-2">
               <div class="text-xl flex items-center">
                 <input
+                  id="p-id"
                   type="text"
                   class="bg-yellow-100 py-2 px-2 outline-none placeholder:text-gray-600 w-6/12"
                   placeholder="p"
@@ -203,6 +209,7 @@
               </div>
               <div class="text-xl flex items-center">
                 <input
+                  id="b-id"
                   type="text"
                   class="bg-yellow-100 py-2 px-2 outline-none placeholder:text-gray-600 w-6/12"
                   placeholder="b"
@@ -210,9 +217,10 @@
               </div>
             </div>
 
-             <h3 class="text-xl py-2">Area :  <span>cm <sup>2</sup></span></h3>
+             <h3 class="text-xl py-2">Area : <span id="pentagon-result">00</span> <span>cm <sup>2</sup></span></h3>
             <div class="card-actions">
               <button
+                id="pentagon-btn"
                 class="btn hover:text-black bg-[#1090D8] text-white text-[18px] w-full"
               >
                 Calculate
@@ -265,5 +273,7 @@
       </div>
     </main>
     <footer></footer>
+    <script src="./scripts/triangle.js"></script>
+    <script src="./scripts/pentagon.js"></script>
   </body>
 </html>
